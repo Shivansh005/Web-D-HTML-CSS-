@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <style>
+
+        /* flow chart in to out 
+        main content--> padding--> border--> margin
+        */
+
+        /* we use * if we want that it should be applied to every field */
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        h3{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body{
+            background-color: rgba(243, 247, 8, 0.877);
+        }
+        .container{
+            background-color: aquamarine;
+            border: 2px solid red;
+
+            /* we can set margin/adding top, bottom, left, right like this */
+            /* padding-top: 90px;
+            padding-bottom: 90px; */
+            /* padding-left: 34px; */
+            
+            /* margin-top: 2px;
+            margin-bottom: 20px;
+            margin-left: 19px;
+            margin-right: 21px; */
+
+
+            /* padding: 16px 16px 15px 17px; 
+            padding/margin : top right bottom left */
+
+            /* padding: y(top/bottom) x(right,left); */
+            padding: 23px 45px;
+            margin: 14px 19px;
+            border-radius: 23px;
+            width: 433px;
+            float: left;
+            
+            font-family: 'Times New Roman', Times, serif;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h3>This is my heading</h3>
+        <p id="first">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, enim nulla modi explicabo ad qui doloribus nemo error. Minus maxime quia ex assumenda.
+        </p>
+    </div>
+
+    <div class="container">
+        <h3>This is my heading</h3>
+        <p id="second">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, enim nulla modi explicabo ad qui doloribus nemo error. Minus maxime quia ex assumenda.
+        </p>
+    </div>
+    <div class="container">
+        <h3>This is my heading</h3>
+        <p id="third">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, enim nulla modi explicabo ad qui doloribus nemo error. Minus maxime quia ex assumenda.
+        </p>
+    </div>
+</body>
+</html>

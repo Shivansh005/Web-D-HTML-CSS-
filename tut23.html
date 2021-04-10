@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Display Property</title>
+    <style>
+*{
+    box-sizing: border-box;
+}
+        header{
+
+            /* we can only set width if it is a block element */
+            width: 1200px;
+            border: 3px solid red;
+            margin: auto;
+        }
+img{
+    width: 34px;
+    height: 34px;
+    display: block;
+    margin: auto;
+}
+
+h3{
+    margin: 0%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+.box{
+    border: 4px solid black;
+    background-color: grey;
+    margin: 12px 0px;
+    padding: 24px;
+    display: inline-block;
+    width:33%;
+}
+
+.container{
+    width: 1200px;
+    margin: auto;
+}
+    </style>
+</head>
+<body>
+    <header class="top">
+        <img src="https://i.pinimg.com/originals/cb/16/bb/cb16bb284a2a80c75041c80ba63e62d3.jpg" alt="">
+        <h3>Welcome to Shivansh's Blog</h3>
+    </header>
+
+    <div class="container">
+    <div class="box">
+        <h4 class="heading">Heading</h4>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum repudiandae tenetur in magnam asperiores nobis error porro possimus perspiciatis, nulla non atque suscipit corporis ea eaque perferendis laboriosam incidunt iure cum voluptate enim similique. Nostrum quia pariatur saepe ducimus accusamus eum, officiis explicabo molestias.</p>
+    </div>
+
+    <div class="box">
+        <h4 class="heading">Heading</h4>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum repudiandae tenetur in magnam asperiores nobis error porro possimus perspiciatis, nulla non atque suscipit corporis ea eaque perferendis laboriosam incidunt iure cum voluptate enim similique. Nostrum quia pariatur saepe ducimus accusamus eum, officiis explicabo molestias.</p>
+    </div>
+
+    <div class="box">
+        <h4 class="heading">Heading</h4>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum repudiandae tenetur in magnam asperiores nobis error porro possimus perspiciatis, nulla non atque suscipit corporis ea eaque perferendis laboriosam incidunt iure cum voluptate enim similique. Nostrum quia pariatur saepe ducimus accusamus eum, officiis explicabo molestias.</p>
+    </div>
+</div>
+</body>
+</html>
