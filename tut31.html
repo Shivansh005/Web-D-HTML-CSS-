@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Orelega+One&display=swap" rel="stylesheet">
+    <title>Before and after pseudo selectors</title>
+
+    <style>
+
+        body{
+            margin: 0;
+        padding: 0%;
+            background-color: black;
+            color:white;
+        }
+
+/* important techinque used to give opacity to the back ground image in the body  */
+        header::before{
+            content: "";
+            background: url('https://source.unsplash.com/user/erondu/1600x900') no-repeat center center/cover;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+
+            opacity: 0.3;
+        }
+
+        .navigation{
+            font-size: 20px;
+            display: flex;
+        }
+
+        li{
+            list-style: none;
+            padding: 1px 18px;
+        }
+section{
+    margin: 0px 227px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* border: 3px solid red; */
+    height: 400px;
+    font-family: 'Orelega One', cursive;
+    justify-content: center;
+}
+
+section::after{
+    font-size: 25px;
+    content: "This is a content";
+    font-family: 'Courier New', Courier, monospace;
+
+}
+
+section p{
+    text-align: center;
+    font-size: 15px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+h1{
+    font-size: 3rem;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="navigation">
+                <li class="item">Home</li>
+                <li class="item">About</li>
+                <li class="item">Services</li>
+                <li class="item">Contact us</li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <h1>Welcome to coding world</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, maiores eaque. Quo in at, nobis eius vitae ut laborum voluptas modi provident error facilis repellendus similique libero quia aliquid, doloribus, dolorum nam. Voluptas, quod! Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste ullam laudantium ducimus, assumenda, minima, laborum totam exercitationem necessitatibus voluptas doloremque dolorum magnam non natus! Fugiat quae ipsum repellat quam nostrum eligendi eius molestiae fugit?   </p>
+    </section>
+    
+</body>
+</html>

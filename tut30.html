@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attribute and nth child pseudo selectors</title>
+    <style>
+
+        .container{
+            display: block;
+            width: 500px;
+            margin: auto;
+        }
+input{
+    display: block;
+}
+
+/* targetted the input tag having type = text  */
+input[type='text']{
+    padding: 2px;
+    border: 2px solid red;
+}
+
+/* targetted the anchor tag whose target is set  */
+a[target]{
+    font-size: 34px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: violet;
+}
+
+/* targetted the anchor tag having target set to _self */
+a[target='_self']{
+    font-size: 34px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(51, 59, 172);
+}
+
+/* targetted the 4th child of li from the list of 10 li's */
+li:nth-child(4){
+    color: blue;
+    /* border: 3px solid red; */
+}
+li:nth-child(7){
+    color: rgb(255, 0, 0);
+    border: 3px solid rgb(0, 225, 255);
+}
+li:nth-child(9){
+    color: rgb(89, 0, 255);
+    border: 3px solid rgb(0, 255, 55);
+}
+
+/* n starts from 0 and fills the property to the children accordingly */
+li:nth-child(2n+0){
+    color: rgb(0, 255, 98);
+}
+
+/* targets all the odd positions */
+li:nth-child(odd)
+{
+    background-color: yellow;
+    border: 3px solid red;
+
+}
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1><a href="http://google.com" target="_blank">Google</a></h1>
+        <h1><a href="http://facebook.com" target="_self">Facebook</a></h1>
+        <form action="" class="form-control">
+            <input type="text" name="" id="" placeholder="Enter your name">
+            <input type="password" name="" id="" placeholder="Enter your password">
+            <input type="submit" value="Submit">
+        </form>
+<ul>
+    <li class="item" id="item-1">item-1</li>
+    <li class="item" id="item-2">item-2</li>
+    <li class="item" id="item-3">item-3</li>
+    <li class="item" id="item-4">item-4</li>
+    <li class="item" id="item-5">item-5</li>
+    <li class="item" id="item-6">item-6</li>
+    <li class="item" id="item-7">item-7</li>
+    <li class="item" id="item-8">item-8</li>
+    <li class="item" id="item-9">item-9</li>
+    <li class="item" id="item-10">item-10</li>
+</ul>
+    </div>
+</body>
+</html>

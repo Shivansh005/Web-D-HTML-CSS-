@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><Media Queries></title>
+        <style>
+            .box{
+                font-size: 72px;
+                text-align: center;
+                background-color: red;
+                color: white;
+                display: none;
+            }
+
+            @media only screen and (max-width:300px){
+                #box1{
+                    display: block;
+                    background-color: aqua;
+                }
+            }
+            @media only screen and (max-width:400px) and (min-width:300px){
+                #box2{
+                    display: block;
+                    background-color: blueviolet;
+                }
+            }
+            @media only screen and  (max-width:800px) and (min-width:450px){
+                #box3{
+                    display: block;
+                    background-color: rgb(43, 226, 58);
+                }
+            }
+            @media only screen and (min-width:800px){
+                #box4{
+                    display: block;
+                    background-color: rgb(177, 226, 43);
+                }
+            }
+        </style>
+</head>
+<body>
+    <div class="box" id="box1">Mai ek iphone hoon</div>
+    <div class="box" id="box2">Mai ek tablet hoon</div>
+    <div class="box" id="box3">Mai ek computer hoon</div>
+    <div class="box" id="box4">Mai ek whitescreen computer hoon</div>
+</body>
+</html>

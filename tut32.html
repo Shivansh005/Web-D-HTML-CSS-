@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box shadow and Text shadow</title>
+
+    <style>
+        .container{
+            display: flex;
+        }
+
+        .card{
+            padding: 23px 23px;
+            margin: 23px 23px ;
+            background-color: aqua;
+            /* border: 2px solid red; */
+
+            /* if we use box-shadow: -7px -6px red then the shadow will be on another two sides  */
+        /* box-shadow: 7px 6px  red;  x-axis y-axis then color*/
+        /* box-shadow: 7px 6px 10px  red;  x-axis y-axis blur radius then color*/
+        /* box-shadow: 7px 6px 10px  red;  x-axis y-axis blur-radius spread-radius then color*/
+        box-shadow: 7px 6px 10px 6px red; 
+
+        /* box-shadow: inset 3px 5px 10px rgb(202, 3, 3); */
+        }
+
+        .card h2{
+            text-shadow: 1px 1px 2px red;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <div class="card" id="card-1">
+        <h2>Card-1</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos, laboriosam quidem? Quibusdam ratione minus reiciendis sapiente quod repellendus explicabo totam cupiditate accusamus, incidunt error magnam, iusto in! Libero, sed cumque laborum aspernatur voluptates soluta.</p>
+    </div>
+    <div class="card" id="card-2">
+        <h2>Card-2</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos, laboriosam quidem? Quibusdam ratione minus reiciendis sapiente quod repellendus explicabo totam cupiditate accusamus, incidunt error magnam, iusto in! Libero, sed cumque laborum aspernatur voluptates soluta.</p>
+    </div>
+    <div class="card" id="card-3">
+        <h2>Card-3</h2>
+       <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos, laboriosam quidem? Quibusdam ratione minus reiciendis sapiente quod repellendus explicabo totam cupiditate accusamus, incidunt error magnam, iusto in! Libero, sed cumque laborum aspernatur voluptates soluta.</p>
+    </div>
+</div>
+</body>
+</html>
