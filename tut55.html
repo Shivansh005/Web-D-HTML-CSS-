@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Dates</title>
+
+    <style>
+        .container {
+            font-size: 23px;
+            border: 2px solid grey;
+            padding: 23px;
+            margin: 12px;
+            text-align: center;
+            background-color: aqua;
+        }
+
+        #time {
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <!-- This is a container -->
+        Current time is <span id="time"></span>
+    </div>
+
+    <script>
+        console.log("This is date and time tutorial");
+        let now = new Date();
+        console.log(now);
+
+        // this will give the reference 
+        let dt = new Date(0);
+        console.log(dt);
+
+        // let newDate =new Date(year, month, date, hours, minutes, seconds, milliseconds);
+        let newDate = new Date(2020, 11, 5, 11, 45, 56, 5);
+        console.log(newDate);
+
+        let year = newDate.getFullYear();
+        console.log("The year is ", year);
+
+        let dat = newDate.getDate();
+        console.log("The date is ", dat);
+
+        let mt = newDate.getMonth();
+        console.log("The month is ", mt);
+
+        let tm = newDate.getTime();
+        console.log("The time is ", tm);
+
+        newDate.setDate(66);
+        console.log(newDate)
+
+        setInterval(updateTime, 1000);
+
+        function updateTime() {
+            time.innerHTML = new Date();
+        }
+    </script>
+</body>
+
+</html>
