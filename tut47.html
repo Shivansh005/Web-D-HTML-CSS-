@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scope and conditionals</title>
+</head>
+<body>
+    <div>
+        <ul>
+            <li>Item-1</li>
+            <li>Item-2</li>
+            <li>Item-3</li>
+            <li>Item-4</li>
+            <li>Item-5</li>
+            <li>Item-6</li>
+            <li>Item-7</li>
+        </ul>
+    </div>
+
+    <script>
+        // var string1="This is a string";
+        // console.log(string1);
+
+        // // we should use let in place of var 
+
+        // let a="Ushdjsfnj";
+        // console.log(a);
+
+        // {
+        //     let a="jdjshfd";
+        //     console.log(a);
+        // }
+        
+
+// this will give an error 
+//         const a="This cannot be changed";
+//         a="This can be changed";
+// console.log(a);
+
+
+// let age=34;
+// if(age>18){
+// console.log("You can drink");
+
+// }
+
+// else{
+//     console.log("You can eat");
+// }
+
+const cups = 4;
+
+switch (cups) {
+    case 4:
+        console.log("Value of cups is 4");
+        break;
+    case 47:
+        console.log("Value of cups is 47");
+        break;
+    case 499:
+        console.log("Value of cups is 499");
+        break;
+    case 48:
+        console.log("Value of cups is 48");
+        break;
+
+    default:
+        console.log("The value of cups is none");
+        break;
+}
+    </script>
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS grid  + media queries</title>
+    <style>
+.container{
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-areas: 
+'navbar navbar navbar navbar'
+'section section section aside'
+'footer footer footer footer';
+}
+
+#navbar{
+    grid-area: navbar;
+}
+#section{
+grid-area: section;
+}
+#aside{
+grid-area: aside;
+}
+
+@media only screen and (max-width:300px){
+                body{
+                    background-color: red;
+                }
+            }
+            @media only screen and (max-width:500px) and (min-width:300px){
+                body{
+                    background-color: rgb(76, 0, 255);
+                }
+            }
+            @media only screen and  (max-width:800px) and (min-width:500px){
+                body{
+                    background-color: rgb(255, 0, 221);
+                }
+
+                .container{
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-areas: 
+'navbar navbar navbar navbar'
+'section section section section'
+'aside aside aside aside'
+'footer footer footer footer';
+}
+
+            }
+            @media only screen and (min-width:800px){
+                body{
+                    background-color: rgb(200, 255, 0);
+                }
+            }
+
+.border-now{
+    border: 2px solid black;
+    background-color: yellow;
+    padding: 23px;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav id="navbar" class="border-now">
+            Home About Contact
+        </nav>
+        <section id="section" class="border-now">
+            <h2>Learn css in hindi</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit placeat repudiandae, quam rerum tempora provident ad aperiam ipsam? Ea laboriosam qui temporibus, aliquam consequuntur dolorum unde, est cum commodi impedit architecto, asperiores amet quasi quisquam aspernatur blanditiis. Quisquam similique, corporis, cum asperiores quae, totam explicabo est eos ad alias velit. Dolorem necessitatibus tenetur natus nesciunt ducimus earum, aspernatur ut reiciendis reprehenderit qui velit, eum maiores porro, facilis placeat laboriosam voluptate! Ut, nostrum. Atque maxime ad facilis veritatis sunt cum placeat neque temporibus molestias quisquam minima aperiam libero, dicta delectus dolores odit tempore voluptatum necessitatibus nihil illum, repellat aut reprehenderit. Voluptates repellat quisquam accusamus debitis expedita eum ipsam architecto, modi earum sapiente odit, cum omnis libero magnam. Ab praesentium ullam, excepturi rerum autem voluptatibus placeat corrupti. Animi suscipit ut porro aliquam soluta? Facilis sint nobis vel ex, reprehenderit, quia, eveniet veniam labore libero dolorum explicabo minima modi assumenda voluptatem beatae ullam doloribus enim excepturi voluptatibus nostrum cumque at harum dolorem. Placeat, sit ratione. Cupiditate dolore ab suscipit sunt aspernatur laborum nam obcaecati hic molestias libero temporibus est possimus quis, quae fugit aut ut nemo velit deleniti laboriosam facere. Quae fuga, rem saepe natus modi ut porro eum quo itaque. Ipsam eveniet nihil, nam nulla a nesciunt animi similique ad, ducimus fugit laboriosam adipisci dolorum accusamus corporis facere magni est ipsum! Impedit qui porro, nesciunt, perspiciatis quos voluptatibus reprehenderit veritatis accusantium eum adipisci illum tenetur, sequi atque eaque asperiores voluptatem? Laborum aperiam voluptatum, fugiat cumque accusantium veritatis suscipit id iusto magnam eius voluptatem deleniti corporis maiores molestias laudantium eum quasi iure, alias sit neque, itaque porro sapiente. Debitis facilis aliquam tempora aliquid doloribus alias nam quidem, veritatis natus quod illum laudantium ipsum cumque dolorum voluptatem neque aperiam, ad in odit doloremque. Dolorum id ducimus commodi veniam excepturi maxime facilis doloremque quae autem?</p>
+        </section>
+        <aside id="aside" class="border-now">
+            <h2>More about us</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse numquam obcaecati molestias sit tempora, blanditiis dolor natus corrupti. Vitae, eos! Odio culpa amet voluptate adipisci quis assumenda magnam possimus sunt eum, aliquam tenetur. Eius quo qui saepe perferendis debitis quos obcaecati, quaerat repudiandae, laboriosam, in porro voluptas. Vel, fugiat recusandae.</p>
+        </aside>
+    </div>
+
+    <footer class="border-now">This is my footer </footer>
+</body>
+</html>
