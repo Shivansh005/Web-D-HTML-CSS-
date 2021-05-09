@@ -1,8 +1,12 @@
 # Web Development with HTML, CSS and JavaScript 
 Learning how to build responsive websites using several media queries.
+
 Complete HTML including internal CSS.
+
 JavaScripts using NodeJs and express.
+
 Use of pug templates.
+
 Use of mongoDB database by establishing connection between nodeJs and mongoDB using mongoose.
 
 ![logohtml](https://user-images.githubusercontent.com/68140375/117400913-33a27b00-af21-11eb-8a47-9bb3e4707cba.png)
